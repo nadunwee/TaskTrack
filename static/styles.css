@@ -1,0 +1,72 @@
+/* color - #1453A6*/
+body {
+  font-family: Lexend;
+}
+.vl {
+  border-left: 1px solid gray;
+  height: 35px;
+  margin-top: 4px;
+  margin-left: 5px;
+  margin-left: 20px;
+}
+.navbar-brand {
+  margin-left: -60px;
+  font-family: Lexend;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1453A6;
+}
+.navbar-brand:hover {
+  color: #1453A6;
+}
+.nav-item1, .nav-item2, .nav-item  {
+  margin-bottom: 5px;
+  margin-top: -7px;
+}
+.nav-item2 {
+  margin-right: -80px;
+  
+}
+.nav-link {
+  color: black;
+}
+.login, .home-btn {
+  border: none;
+  color: black;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 4px;
+}
+.login:hover, .home-btn:hover {
+  background-color: #f0f0f0;
+}
+.register {
+  border: none;
+  color: white;
+  width: 140px;
+  height: 39px;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #1453A6;
+  padding-bottom: 4px;
+}
+.register:hover {
+  background-color: #1972e6;
+}
+#signup-button, #login-button {
+  border: none;
+  margin-top: 20px;
+  width: 466px;
+  height: 50px;
+  background-color: #1453A6;
+}
+#signup-button:hover, #login-button:hover {
+  background-color: #1972e6;
+}

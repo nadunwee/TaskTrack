@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block div%}
+
+<div class="card border-light mb-3" style="max-width: 40rem; width: 500px; height: 500px;">
+  <div class="card-body">
+    <h1>Sign Up</h1><br>
+
+    <form action="/register" method="post">
+      <div class="form-group">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Email" name="email" autocomplete="off" required>
+          <label for="floatingInput">Email</label>
+        </div>  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username" autocomplete="off" required> 
+          <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required >
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="conform-password" required>
+          <label for="floatingPassword">Conform Password</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="signup-button">Sign up with Email</button>
+    </div>
+    </form>
+  </div>
+  <div class="model-container">
+    <h3>Model COntent</h3>
+  </div>
+</div>
+
+<script>
+  function showPopup() {
+  // Create the popup element
+  var popup = document.createElement("div");
+  popup.innerHTML = "This is a popup";
+
+  // Set the position of the popup
+  popup.style.position = "absolute";
+  popup.style.top = "100px";
+  popup.style.left = "100px";
+
+  // Add the popup to the DOM
+  document.body.appendChild(popup);
+}
+
+// Add a button to the page that will show the popup
+var button = document.createElement("button");
+button.innerHTML = "Show popup";
+button.onclick = showPopup;
+
+document.body.appendChild(button);
+</script>
+{% endblock %}

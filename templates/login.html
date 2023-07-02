@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    LogIn
+{% endblock %}
+
+{% block div%}
+
+<div class="card border-light mb-3" style="max-width: 40rem; width: 500px; height: 500px;">
+  <div class="card-body" >
+    <h1>Log In</h1><br>
+
+    <form action="/login" method="post">
+      
+      <div class="form-group">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Email" name="email" autocomplete="off" autofocus>
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="login-button">Login</button><br><br>
+      <a href="#">Forgot your password?</a><br><br>
+      <div class="no-acc">
+        Don't have an account <a href="/register">Sign up</a>
+      </div>
+    </div>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
