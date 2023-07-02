@@ -8,6 +8,10 @@
 
 <div class="card border-light mb-3" style="max-width: 40rem; width: 500px; height: 500px;">
   <div class="card-body">
+    <div class="alert alert-dismissible alert-danger">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </div>  
     <h1>Sign Up</h1><br>
 
     <form action="/register" method="post">
@@ -34,31 +38,6 @@
     </div>
     </form>
   </div>
-  <div class="model-container">
-    <h3>Model COntent</h3>
-  </div>
 </div>
 
-<script>
-  function showPopup() {
-  // Create the popup element
-  var popup = document.createElement("div");
-  popup.innerHTML = "This is a popup";
-
-  // Set the position of the popup
-  popup.style.position = "absolute";
-  popup.style.top = "100px";
-  popup.style.left = "100px";
-
-  // Add the popup to the DOM
-  document.body.appendChild(popup);
-}
-
-// Add a button to the page that will show the popup
-var button = document.createElement("button");
-button.innerHTML = "Show popup";
-button.onclick = showPopup;
-
-document.body.appendChild(button);
-</script>
 {% endblock %}
